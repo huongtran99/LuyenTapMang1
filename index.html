@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện Tập Mảng 01</title>
+</head>
+<body>
+<script>
+    /*Bài 1- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử.
+    Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.*/
+
+    /*    let n = parseInt(prompt("Nhập Vào Số Phần Tử"));
+
+        let arr = [];
+        let count = 0;
+
+        for (let i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("Nhập Phần Tử Thứ " + i));
+        }
+
+        console.log(arr);
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                console.log("Các số nguyên lớn hơn hoặc bằng 10 là: " + arr[i]);
+                count++;
+            }
+        }
+
+        console.log("Có " + count + " Số Nguyên Lớn Hơn Hoặc Bằng 10");*/
+
+    /*    Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau.
+        Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.*/
+
+    /*    let n = parseInt(prompt("Nhập Vào Số Phần Tử"));
+        let arr = [];
+
+        for (let i = 0; i < n; i++) {
+            do {
+                arr[i] = parseInt(prompt("Nhập Phần Tử Thứ " + i));
+            } while (arr[i] === arr[i - 1] || arr[i] === arr[i - 2] || arr[i] === arr[i - 3] || arr[i] === arr[i - 4])
+        }
+        console.log(arr);
+        let max = arr[0];
+        let vt;
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                vt = i;
+            }
+        }
+        console.log("Phần tử có giá trị lớn nhất là " + max + " ở vị trí " + vt);*/
+
+    /*    Bài 3- Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó.
+            In ra giá trị trung bình của các phần tử trong mảng.*/
+
+    /*    let n = parseInt(prompt("Nhập Vào Số Phần Tử"));
+        let arr = [];
+
+        for (let i = 0; i < n; i++) {
+             arr[i] = parseInt(prompt("Nhập Phần Tử Thứ " + i));
+        }
+        console.log(arr);
+        let max = arr[0];
+        let tb;
+        let sum = 0;
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        tb = sum / arr.length;
+
+        console.log("Phần tử có giá trị lớn nhất là " + max);
+        console.log("Giá trị trung bình của các phần tử trong mảng là  " + tb);*/
+
+    /*    Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.*/
+
+    /*        let n = parseInt(prompt("Nhập Vào Số Phần Tử"));
+            let arr = [];
+
+            for (let i = 0; i < n; i++) {
+                 arr[i] = parseInt(prompt("Nhập Phần Tử Thứ " + i));
+              }
+            console.log(arr);
+            let temp;
+
+            for (let i = 0; i < arr.length/2; i++) {
+                temp = arr[i];
+                arr[i] = arr[arr.length - 1 - i];
+                arr[arr.length - 1 - i] = temp;
+            }
+
+            console.log(arr);*/
+
+    /*Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi*/
+    /*    let n = parseInt(prompt("Nhập Vào Số Phần Tử"));
+        let arr = [];
+        let count = 0;
+
+        for (let i = 0; i < n; i++) {
+             arr[i] = parseInt(prompt("Nhập Phần Tử Thứ " + i));
+        }
+        console.log(arr);
+
+        for (let i = 0; i < arr.length; i++){
+            if(arr[i] < 0) {
+                count++;
+            }
+        }
+        console.log("Có " + count + " số nguyên âm trong mảng.");*/
+
+    /*    Bài 6- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+        Chương trình tìm xem V có nằm trong mảng số nguyên không?
+        Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".*/
+
+    /*    let n = parseInt(prompt("Nhập Vào Số Phần Tử"));
+        let arr = [];
+
+        for (let i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("Nhập Phần Tử Thứ " + i));
+        }
+
+        console.log(arr);
+
+        let v = parseInt(prompt("Nhập Vào Số Nguyên V"));
+        let count = 0;
+
+        for (let i = 0; i < arr.length; i++) {
+            if (v === arr[i]) {
+                count++;
+            }
+        }
+
+        if (count > 0) {
+            console.log("V is in the array");
+        } else {
+            console.log("V is not in the array");
+        }*/
+
+    /*Bài 7- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+    Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng
+    (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V,
+    và gán 0 cho phần tử cuối cùng của mảng)*/
+
+    /*    let n = parseInt(prompt("Nhập Vào Số Phần Tử"));
+        let arr = [];
+        let arr2 = [];
+
+        for (let i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("Nhập Phần Tử Thứ " + i));
+        }
+
+        console.log(arr);
+
+        let v = parseInt(prompt("Nhập vào phần tử số nguyên v"));
+        for (let i = 0; i < arr.length; i++) {
+            if(v !== arr[i]) {
+                arr2.push(arr[i]);
+            }
+
+        }
+        console.log(arr2);*/
+
+    /*    Bài 8- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử.
+        Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.*/
+
+/*        let n = parseInt(prompt("Nhập Vào Số Phần Tử"));
+        let arr = [];
+
+        for (let i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("Nhập Phần Tử Thứ " + i));
+        }
+
+
+        let temp;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i + 1; j < arr.length ; j++) {
+                if (arr[i] < arr[j]) {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+
+        console.log(arr);*/
+
+    /*    Bài 9- Viết chương trình khởi tạo/nhập vào 2 mảng số nguyên gồm 10 phần tử, gọi là mảng a và b.
+        Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên.
+        Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c. Hiển thị mảng c.*/
+
+    //let n = parseInt(prompt("Nhập Vào Số Phần Tử"));
+/*    let a = [];
+    let b = [];
+    let c = [];
+
+    for (let i = 0; i < 10; i++) {
+        a[i] = parseInt(prompt("Nhập Phần Tử Thứ " + i));
+    }
+
+    console.log(a);
+    for (let i = 0; i < 10; i++) {
+        b[i] = parseInt(prompt("Nhập Phần Tử Thứ " + i));
+    }
+    console.log(b);
+
+    for (let i = 0; i < 20; i++) {
+        if (i < 10) {
+            c[i] = a[i];
+        } else {
+            for (let j = 0; j < 10; j++) {
+                c[i] = b[j];
+                i++;
+            }
+        }
+    }
+
+    console.log(c);*/
+
+</script>
+</body>
+</html>
